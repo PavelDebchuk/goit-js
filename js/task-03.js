@@ -20,27 +20,8 @@ const images = [
         const imagJs = document.createElement('img');
         imagJs.src = element.url;
         imagJs.alt = element.alt;
-        // imagJs.setAttribute('max-width',1200);
         newGallery.insertAdjacentElement('afterbegin', imagJs);
         return newGallery;
     })
 
     imagesContainer.append(...imagesJs);
-
-
-
-
-//   const imagesContainer = document.querySelector('#gallery');
-
-//     const imagesJs = images.map(element => {
-//         const newGallery = document.createElement('li');
-//         const imagJs = document.createElement('img');
-//         imagJs.src = element.url;
-//         imagJs.alt = element.alt;
-//         imagJs.setAttribute('width',800);
-//         newGallery.append(imagJs);
-//         return newGallery;
-//     })
-// console.log(imagesJs)
-//     imagesContainer.append(...imagesJs);
-    
